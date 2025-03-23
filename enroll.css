@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh; /* Ensure the body takes full height of the screen */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Form Section */
+.enroll-form {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Allow this section to take up remaining space */
+}
+
+.enroll-form h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Form Label */
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 1.1em;
+}
+
+/* Form Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Textarea */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Checkbox and Terms Link */
+label[for="terms"] {
+    font-size: 1em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+label[for="terms"] input {
+    margin-right: 10px;
+}
+
+/* CAPTCHA Section */
+.captcha {
+    margin-bottom: 20px;
+}
+
+.captcha input {
+    width: 100px;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .enroll-form {
+        padding: 15px;
+    }
+
+    .enroll-form h2 {
+        font-size: 1.8em;
+    }
+
+    button {
+        padding: 12px;
+    }
+
+    label {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .enroll-form {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea,
+    select {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 12px;
+    }
+}

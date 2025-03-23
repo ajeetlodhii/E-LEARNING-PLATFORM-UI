@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Course - E-Learning Platform</title>
+    <link rel="stylesheet" href="grapichd.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Graphic Design Course</h1>
+        <p>Enhance your creativity with graphic design tools and techniques.</p>
+    </header>
+
+    <!-- Sidebar for Quick Navigation -->
+    <div id="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#course-content">Course Overview</a></li>
+            <li><a href="#video-tutorials">Video Tutorials</a></li>
+            <li><a href="#course-feedback">Course Feedback</a></li>
+            <li><a href="#progress-tracker">Progress Tracker</a></li>
+        </ul>
+    </div>
+
+    <!-- Course Content Section -->
+    <div id="course-content">
+        <h2>Course Modules</h2>
+        <ul>
+            <li>Introduction to Graphic Design</li>
+            <li>Understanding Color Theory</li>
+            <li>Typography and Layout Design</li>
+            <li>Adobe Photoshop Basics</li>
+            <li>Advanced Techniques in Illustrator</li>
+            <li>Creating Digital Art & Branding</li>
+        </ul>
+        <p>Start learning and mastering Graphic Design skills!</p>
+        <button id="start-course-button">Start Course</button>
+    </div>
+
+    <!-- Course Progress Tracker -->
+    <div id="progress-tracker">
+        <h2>Your Course Progress</h2>
+        <div class="progress-bar-container">
+            <h3>Module 1: Introduction to Graphic Design</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 20%;"></div>
+            </div>
+            <p>20% completed</p>
+        </div>
+        <div class="progress-bar-container">
+            <h3>Module 2: Understanding Color Theory</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div>
+            </div>
+            <p>50% completed</p>
+        </div>
+    </div>
+
+    <!-- Video Tutorials Section -->
+    <div id="video-tutorials">
+        <h2>Video Tutorials</h2>
+        <p>Learn from our expert instructors through these video tutorials.</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Course Feedback Section -->
+    <div id="course-feedback">
+        <h2>Course Feedback</h2>
+        <p>Leave your feedback about this course!</p>
+        <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
+        <button id="submit-feedback">Submit Feedback</button>
+    </div>
+
+    <!-- Rating System -->
+    <div id="rating">
+        <h2>Rate This Course</h2>
+        <div class="rating-system">
+            <span class="star" data-rate="1">&#9733;</span>
+            <span class="star" data-rate="2">&#9733;</span>
+            <span class="star" data-rate="3">&#9733;</span>
+            <span class="star" data-rate="4">&#9733;</span>
+            <span class="star" data-rate="5">&#9733;</span>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 E-Learning Platform | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // JavaScript for Button Click Interactions and Ratings
+        document.getElementById('start-course-button').addEventListener('click', function() {
+            document.getElementById('course-content').style.display = 'none';
+            alert('Starting the course...');
+        });
+
+        // Course Feedback Submit
+        document.getElementById('submit-feedback').addEventListener('click', function() {
+            let feedback = document.getElementById('feedback').value;
+            if (feedback) {
+                alert('Thank you for your feedback!');
+                document.getElementById('feedback').value = '';
+            } else {
+                alert('Please write something before submitting.');
+            }
+        });
+
+        // Rating System
+        const stars = document.querySelectorAll('.star');
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                let rate = this.getAttribute('data-rate');
+                alert('You rated the course ' + rate + ' stars!');
+                stars.forEach(s => s.classList.remove('active'));
+                for (let i = 0; i < rate; i++) {
+                    stars[i].classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

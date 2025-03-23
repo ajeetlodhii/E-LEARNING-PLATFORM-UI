@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Course - E-Learning Platform</title>
+    <link rel="stylesheet" href="datas.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Data Science Course</h1>
+        <p>Master data analysis, machine learning, and more!</p>
+    </header>
+
+    <!-- Course Content -->
+    <div id="course-content">
+        <h2>Course Modules</h2>
+        <ul>
+            <li>Introduction to Data Science</li>
+            <li>Data Preprocessing & Cleaning</li>
+            <li>Exploratory Data Analysis (EDA)</li>
+            <li>Machine Learning Algorithms</li>
+            <li>Deep Learning and Neural Networks</li>
+        </ul>
+        <p>Start learning and mastering the art of data science!</p>
+        <button onclick="showModule(1)">Start Module 1</button>
+    </div>
+
+    <!-- Module 1 Content -->
+    <div id="module1" class="module-content">
+        <h3>Module 1: Introduction to Data Science</h3>
+        <p>In this module, we’ll cover the basics of data science, including the data science pipeline, essential tools like Python and R, and an overview of machine learning.</p>
+        <button>Start Learning</button>
+    </div>
+
+    <!-- Module 2 Content -->
+    <div id="module2" class="module-content">
+        <h3>Module 2: Data Preprocessing & Cleaning</h3>
+        <p>Learn how to preprocess and clean data using Python libraries like pandas and NumPy, and get the dataset ready for analysis and modeling.</p>
+        <button>Start Learning</button>
+    </div>
+
+    <!-- Module 3 Content -->
+    <div id="module3" class="module-content">
+        <h3>Module 3: Exploratory Data Analysis (EDA)</h3>
+        <p>In this module, we’ll explore the dataset through various techniques, such as data visualization and correlation analysis, to uncover hidden patterns.</p>
+        <button>Start Learning</button>
+    </div>
+
+    <!-- Module 4 Content -->
+    <div id="module4" class="module-content">
+        <h3>Module 4: Machine Learning Algorithms</h3>
+        <p>Learn about machine learning algorithms like regression, classification, clustering, and model evaluation techniques.</p>
+        <button>Start Learning</button>
+    </div>
+
+    <!-- Module 5 Content -->
+    <div id="module5" class="module-content">
+        <h3>Module 5: Deep Learning and Neural Networks</h3>
+        <p>Discover the fundamentals of deep learning, neural networks, and how to implement them using popular frameworks like TensorFlow and Keras.</p>
+        <button>Start Learning</button>
+    </div>
+
+    <!-- Additional Features -->
+    <div id="additional-functions">
+        <h2>Additional Features</h2>
+        <button onclick="showInstructor()">Contact Instructor</button>
+        <button onclick="watchVideo()">Watch Introductory Video</button>
+        <button onclick="downloadCertificate()">Download Certificate</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 E-Learning Platform | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript to control modules visibility -->
+    <script>
+        function showModule(moduleNumber) {
+            // Hide all modules initially
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById('module' + i).style.display = 'none';
+            }
+
+            // Show the selected module
+            document.getElementById('module' + moduleNumber).style.display = 'block';
+        }
+
+        // Functions for additional features
+        function showInstructor() {
+            alert("Contact your instructor via email at instructor@elearning.com");
+        }
+
+        function watchVideo() {
+            window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Link to your video
+        }
+
+        function downloadCertificate() {
+            alert("Your certificate will be available for download after completing the course!");
+        }
+    </script>
+
+</body>
+</html>

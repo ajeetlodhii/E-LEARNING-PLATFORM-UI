@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development - E-Learning Platform</title>
+    <link rel="stylesheet" href="webdev.css">
+    <script>
+        // JavaScript functionality to handle course progression
+        function startModule(moduleNumber) {
+            alert("Starting Module " + moduleNumber);
+            document.getElementById("module" + moduleNumber).style.display = "block"; // Show the selected module
+        }
+
+        function showQuiz(moduleNumber) {
+            alert("Launching Quiz for Module " + moduleNumber);
+        }
+
+        function contactInstructor() {
+            alert("Redirecting to the contact instructor page...");
+            window.location.href = "contact-instructor.html"; // Redirect to a contact page for the instructor
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Web Development Course</h1>
+        <p>Learn the latest web technologies and frameworks.</p>
+    </header>
+
+    <!-- Course Content -->
+    <div id="course-content">
+        <h2>Course Modules</h2>
+        <ul>
+            <li><button onclick="startModule(1)">Start Module 1: Introduction to Web Development</button></li>
+            <li><button onclick="startModule(2)">Start Module 2: HTML Basics</button></li>
+            <li><button onclick="startModule(3)">Start Module 3: CSS Styling</button></li>
+            <li><button onclick="startModule(4)">Start Module 4: JavaScript Fundamentals</button></li>
+            <li><button onclick="startModule(5)">Start Module 5: Advanced JavaScript and Frameworks</button></li>
+        </ul>
+    </div>
+
+    <!-- Module 1 Content -->
+    <div id="module1" style="display:none;">
+        <h3>Module 1: Introduction to Web Development</h3>
+        <p>In this module, you will learn the basics of web development, including what the web is, how websites are structured, and more.</p>
+        <button onclick="showQuiz(1)">Take Quiz</button>
+    </div>
+
+    <!-- Module 2 Content -->
+    <div id="module2" style="display:none;">
+        <h3>Module 2: HTML Basics</h3>
+        <p>This module covers the basics of HTML, the standard markup language for creating web pages. You'll learn how to structure web pages with elements like headings, paragraphs, and images.</p>
+        <button onclick="showQuiz(2)">Take Quiz</button>
+    </div>
+
+    <!-- Module 3 Content -->
+    <div id="module3" style="display:none;">
+        <h3>Module 3: CSS Styling</h3>
+        <p>In this module, you'll learn how to style web pages using CSS. You'll cover styling for text, colors, layouts, and more!</p>
+        <button onclick="showQuiz(3)">Take Quiz</button>
+    </div>
+
+    <!-- Module 4 Content -->
+    <div id="module4" style="display:none;">
+        <h3>Module 4: JavaScript Fundamentals</h3>
+        <p>Learn the fundamentals of JavaScript, the programming language that adds interactivity to your websites. You'll cover variables, functions, loops, and events.</p>
+        <button onclick="showQuiz(4)">Take Quiz</button>
+    </div>
+
+    <!-- Module 5 Content -->
+    <div id="module5" style="display:none;">
+        <h3>Module 5: Advanced JavaScript and Frameworks</h3>
+        <p>This module dives into more advanced JavaScript concepts, as well as popular frameworks like React and Angular.</p>
+        <button onclick="showQuiz(5)">Take Quiz</button>
+    </div>
+
+    <!-- Additional Functionalities -->
+    <div id="additional-functions">
+        <h2>Additional Features</h2>
+        <button onclick="contactInstructor()">Contact Instructor</button>
+        <button onclick="window.location.href='https://www.youtube.com/watch?v=xxQOSuoDiEY'">Watch Introductory Video</button>
+        <button onclick="window.location.href='https://www.example.com/course-certificate'">Download Certificate</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 E-Learning Platform | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

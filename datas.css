@@ -1,0 +1,232 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    animation: fadeIn 1.5s ease-out;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: slideIn 1s ease-out;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 2s 1.5s forwards;
+}
+
+/* Course Content Styling */
+#course-content {
+    padding: 30px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-out;
+    opacity: 0;
+    animation: fadeInUp 1.5s 0.5s forwards;
+}
+
+#course-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#course-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#course-content ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555;
+    transition: transform 0.3s ease;
+}
+
+#course-content ul li:hover {
+    transform: translateX(10px);
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Module Content Styling */
+.module-content {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.module-content h3 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.module-content p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Additional Features Styling */
+#additional-functions {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+#additional-functions h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#additional-functions button {
+    margin: 15px 0;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+}
+
+#additional-functions button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 1s ease-out;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #course-content h2 {
+        font-size: 2em;
+    }
+
+    #course-content ul li {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .module-content h3 {
+        font-size: 1.8em;
+    }
+
+    .module-content p {
+        font-size: 1em;
+    }
+
+    #additional-functions h2 {
+        font-size: 1.8em;
+    }
+
+    #additional-functions button {
+        font-size: 1em;
+    }
+}
+
+/* Keyframes Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

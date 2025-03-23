@@ -1,0 +1,169 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Course Content Section */
+#course-content {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#course-content h2 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#course-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#course-content li {
+    margin: 10px 0;
+}
+
+#course-content button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+#course-content button:hover {
+    background-color: #45a049;
+}
+
+/* Module Content */
+#module1, #module2, #module3, #module4, #module5 {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#module1 h3, #module2 h3, #module3 h3, #module4 h3, #module5 h3 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+#module1 p, #module2 p, #module3 p, #module4 p, #module5 p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Additional Features Section */
+#additional-functions {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#additional-functions h2 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#additional-functions button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+#additional-functions button:hover {
+    background-color: #e64a19;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+
+    #course-content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #course-content button {
+        font-size: 1.2em;
+    }
+
+    #module1, #module2, #module3, #module4, #module5 {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #additional-functions {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}

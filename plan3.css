@@ -1,0 +1,184 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Header Styling */
+header {
+    background-color: #005f41; /* Dark green for a more professional, refined look */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Plan Details Section Styling */
+.plan-details {
+    padding: 30px;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow to highlight the premium nature */
+}
+
+.plan-details h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.plan-details p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.plan-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan-details ul li {
+    font-size: 1.1em;
+    color: #555;
+    padding: 5px 0;
+}
+
+.plan-details ul li:before {
+    content: "✔";
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.testimonials p {
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* CTA (Call to Action) Section */
+.cta {
+    background-color: #e8f5e9;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cta a {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.cta a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling for "Start Learning Today" */
+button {
+    background-color: #4CAF50;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .plan-details {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .plan-details h2 {
+        font-size: 1.8em;
+    }
+
+    .plan-details ul li {
+        font-size: 1em;
+    }
+
+    .cta {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
